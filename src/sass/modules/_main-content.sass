@@ -1,0 +1,103 @@
+.main
+  width: 100%
+  height: auto
+  position: relative
+  border-bottom: 10px solid $green
+  &:before, &::after
+    content: ''
+    display: table
+  &::after
+    clear: both
+  .main-content
+    height: auto
+    min-height: 350px
+    width: 100%
+    position: relative
+    &::before, &::after
+      content: ''
+      display: table
+    &::after
+      clear: both
+      overflow: hidden
+    @media screen and (max-width: 980px)
+      height: auto
+    .image-section
+      float: left
+      width: 50%
+      height: 350px
+      background: url('../img/woodbury-course-1017.jpg') 0 0 no-repeat
+      background-size: cover
+      @media screen and (max-width: 980px)
+        display: none
+        float: none
+        width: 100%
+    .content
+      width: 50%
+      height: 350px
+      padding: 60px
+      box-sizing: border-box
+      float: left
+      position: relative
+      @media screen and (max-width: 980px)
+        float: none
+        height: auto
+        width: 100%
+      .inner-content
+        width: 80%
+        height: auto
+        float: left
+        @media screen and (max-width: 780px)
+          float: none
+          width: 100%
+        h2
+          margin: 0
+        .list-items
+          width: 100%
+          margin-top: 20px
+      .badge-content
+        width: 20%
+        float: left
+        height: 200px
+        position: relative
+        text-align: left
+        @media screen and (max-width: 780px)
+          float: none
+          width: 100%
+          text-align: center
+        .badge-text
+          position: absolute
+          top: 30px
+          left: 0
+          right: -40px
+          width: 200px
+          margin: 0
+          transform: rotate(20deg) translateX(0)
+          @media screen and (max-width: 780px)
+            top: 70px
+            text-align: center
+            position: relative
+            left: 50%
+            transform: rotate(20deg) translateX(-50%)
+          p
+            position: absolute
+            color: white
+            font-size: 9px
+            top: 12px
+            right: 104px
+            width: 80px
+            text-align: center
+            @media screen and (max-width: 480px)
+              font-size: 9px
+              top: 10px
+              right: 59px
+              width: 80px
+          h2
+            color: white
+            font-size: 15px
+            position: absolute
+            top: 50px
+            left: 12px
+            width: 80px
+            text-align: center
+            @media screen and (max-width: 480px)
+              left: 60px

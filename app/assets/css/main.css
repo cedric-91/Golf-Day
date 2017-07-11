@@ -1,0 +1,263 @@
+body {
+  font-family: "Noto Serif", serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, p {
+  font-weight: 200; }
+
+p {
+  font-size: 16px; }
+
+h1 {
+  font-size: 55px; }
+
+h2 {
+  font-size: 38px; }
+
+h3 {
+  font-size: 26px; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+form {
+  width: 100%; }
+
+.main-header {
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  background: url("../img/woodbury-course-1024.jpg") 0 50% no-repeat;
+  background-size: cover;
+  position: relative; }
+  .main-header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 97, 62, 0.7); }
+  .main-header .header-container {
+    position: relative;
+    z-index: 1;
+    height: inherit;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: white; }
+    .main-header .header-container .logo {
+      position: relative;
+      top: -7px; }
+    .main-header .header-container h2 {
+      margin-top: 95px; }
+    .main-header .header-container p {
+      width: auto;
+      max-width: 400px;
+      margin: 0 auto; }
+    .main-header .header-container .golf-logo {
+      margin: 40px 0; }
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 20px 0; }
+  footer .sponsors {
+    width: 40%;
+    margin: 0 auto;
+    height: 400px;
+    text-align: center; }
+    @media screen and (max-width: 780px) {
+      footer .sponsors {
+        height: auto; } }
+    footer .sponsors figure {
+      margin: 0.6em 0;
+      float: left;
+      width: 100%;
+      height: auto; }
+      footer .sponsors figure img {
+        margin: 0 0.2em; }
+    @media screen and (max-width: 780px) {
+      footer .sponsors {
+        float: none; } }
+
+.bold {
+  font-weight: 700; }
+
+.green-color {
+  color: #2b613e; }
+
+.bg-green {
+  background-color: #2b613e; }
+
+.text-color-white {
+  color: white; }
+
+.main {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-bottom: 10px solid #2b613e; }
+  .main:before, .main::after {
+    content: '';
+    display: table; }
+  .main::after {
+    clear: both; }
+  .main .main-content {
+    height: auto;
+    min-height: 350px;
+    width: 100%;
+    position: relative; }
+    .main .main-content::before, .main .main-content::after {
+      content: '';
+      display: table; }
+    .main .main-content::after {
+      clear: both;
+      overflow: hidden; }
+    @media screen and (max-width: 980px) {
+      .main .main-content {
+        height: auto; } }
+    .main .main-content .image-section {
+      float: left;
+      width: 50%;
+      height: 350px;
+      background: url("../img/woodbury-course-1017.jpg") 0 0 no-repeat;
+      background-size: cover; }
+      @media screen and (max-width: 980px) {
+        .main .main-content .image-section {
+          display: none;
+          float: none;
+          width: 100%; } }
+    .main .main-content .content {
+      width: 50%;
+      height: 350px;
+      padding: 60px;
+      box-sizing: border-box;
+      float: left;
+      position: relative; }
+      @media screen and (max-width: 980px) {
+        .main .main-content .content {
+          float: none;
+          height: auto;
+          width: 100%; } }
+      .main .main-content .content .inner-content {
+        width: 80%;
+        height: auto;
+        float: left; }
+        @media screen and (max-width: 780px) {
+          .main .main-content .content .inner-content {
+            float: none;
+            width: 100%; } }
+        .main .main-content .content .inner-content h2 {
+          margin: 0; }
+        .main .main-content .content .inner-content .list-items {
+          width: 100%;
+          margin-top: 20px; }
+      .main .main-content .content .badge-content {
+        width: 20%;
+        float: left;
+        height: 200px;
+        position: relative;
+        text-align: left; }
+        @media screen and (max-width: 780px) {
+          .main .main-content .content .badge-content {
+            float: none;
+            width: 100%;
+            text-align: center; } }
+        .main .main-content .content .badge-content .badge-text {
+          position: absolute;
+          top: 30px;
+          left: 0;
+          right: -40px;
+          width: 200px;
+          margin: 0;
+          -ms-transform: rotate(20deg) translateX(0);
+              transform: rotate(20deg) translateX(0); }
+          @media screen and (max-width: 780px) {
+            .main .main-content .content .badge-content .badge-text {
+              top: 70px;
+              text-align: center;
+              position: relative;
+              left: 50%;
+              -ms-transform: rotate(20deg) translateX(-50%);
+                  transform: rotate(20deg) translateX(-50%); } }
+          .main .main-content .content .badge-content .badge-text p {
+            position: absolute;
+            color: white;
+            font-size: 9px;
+            top: 12px;
+            right: 104px;
+            width: 80px;
+            text-align: center; }
+            @media screen and (max-width: 480px) {
+              .main .main-content .content .badge-content .badge-text p {
+                font-size: 9px;
+                top: 10px;
+                right: 59px;
+                width: 80px; } }
+          .main .main-content .content .badge-content .badge-text h2 {
+            color: white;
+            font-size: 15px;
+            position: absolute;
+            top: 50px;
+            left: 12px;
+            width: 80px;
+            text-align: center; }
+            @media screen and (max-width: 480px) {
+              .main .main-content .content .badge-content .badge-text h2 {
+                left: 60px; } }
+
+.form-wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 687px;
+  position: relative;
+  background-color: #2b613e; }
+  .form-wrapper::before, .form-wrapper::after {
+    content: '';
+    display: table; }
+  .form-wrapper::after {
+    clear: both; }
+  .form-wrapper .content {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden; }
+    .form-wrapper .content .inner-content {
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: 100%; }
+      .form-wrapper .content .inner-content .form-content {
+        width: 50%;
+        height: 100%;
+        min-height: 100%;
+        float: left;
+        background-color: #2b613e; }
+        @media screen and (max-width: 980px) {
+          .form-wrapper .content .inner-content .form-content {
+            float: none;
+            width: 100%; } }
+        .form-wrapper .content .inner-content .form-content iframe {
+          width: auto;
+          min-width: 100%;
+          height: auto;
+          border: none; }
+    .form-wrapper .content .woodbury-wrapper {
+      width: 50%;
+      float: left;
+      height: 687px; }
+      @media screen and (max-width: 980px) {
+        .form-wrapper .content .woodbury-wrapper {
+          display: none;
+          float: none; } }
+      .form-wrapper .content .woodbury-wrapper .woodbury-sign {
+        width: 100%;
+        height: auto;
+        min-height: 800px;
+        float: left;
+        background: url("../img/woodbury-course_sign.jpg") 0 0 no-repeat;
+        background-size: cover; }

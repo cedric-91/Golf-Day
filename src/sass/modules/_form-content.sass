@@ -1,0 +1,49 @@
+.form-wrapper
+  width: 100%
+  height: auto
+  min-height: 687px
+  position: relative
+  background-color: $green
+  &::before, &::after
+    content: ''
+    display: table
+  &::after
+    clear: both
+  .content
+    width: 100%
+    height: auto
+    min-height: 100%
+    overflow: hidden
+    .inner-content
+      position: relative
+      width: 100%
+      height: auto
+      min-height: 100%
+      .form-content
+        width: 50%
+        height: 100%
+        min-height: 100%
+        float: left
+        background-color: $green
+        @media screen and (max-width: 980px)
+          float: none
+          width: 100%
+        iframe
+          width: auto
+          min-width: 100%
+          height: auto
+          border: none
+    .woodbury-wrapper
+      width: 50%
+      float: left
+      height: 687px
+      @media screen and (max-width: 980px)
+        display: none
+        float: none
+      .woodbury-sign
+        width: 100%
+        height: auto
+        min-height: 800px
+        float: left
+        background: url('../img/woodbury-course_sign.jpg') 0 0 no-repeat
+        background-size: cover
